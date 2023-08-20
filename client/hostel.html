@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Ginnie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hostelContainer">
+      <h1 class="h-primary" id="contactHostel">Hostels Information</h1>
+
+      <form id="hostelInfo" class="contact1">
+        <div>
+          <label for="hostelName">Hostel Name: </label><br /><br />
+          <input
+            type="text"
+            name="hostelName"
+            id="hostelName"
+            placeholder="Enter your hostel name"
+          />
+        </div>
+        <div>
+          <label for="hostelAddr">Hostel Address: </label><br /><br />
+          <input
+            type="text"
+            name="hostelAddr"
+            id="hostelAddr"
+            placeholder="Enter your hostel address"
+          />
+        </div>
+        <div>
+          <label for="hostelPin">Pincode: </label><br /><br />
+          <input
+            type="number"
+            name="hostelPin"
+            id="hostelPin"
+            placeholder="Enter your hostel pin"
+          />
+        </div>
+        <div>
+          <label for="hostelFacilities">Facilites: </label><br /><br />
+          <input
+            type="text"
+            name="hostelFacilities"
+            id="hostelFacilities"
+            placeholder="Enter your Hostel facilites"
+          />
+        </div>
+        <div>
+          <label for="hostelFees">Hostel fees: </label><br /><br />
+          <input
+            type="number"
+            name="hostelFees"
+            id="hostelFees"
+            placeholder="Enter your Hostel fees"
+          />
+        </div>
+        <div>
+          <label for="hostelRating">Hostel Rating: </label><br /><br />
+          <input
+            type="number"
+            name="hostelRating"
+            id="hostelRating"
+            placeholder="Rate your hostel from 1 to 5"
+          />
+        </div>
+        <div>
+          <label for="hostelReview">Hostel Review: </label><br /><br />
+          <input
+            type="text"
+            name="hostelReview"
+            id="hostelReview"
+            placeholder="Review your Hostel in 10 words"
+          />
+        </div>
+        <div>
+          <button type="submit" id="hostelBtn" class="submit-btn">
+            Submit
+          </button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </form>
+      <br /><br /><br />
+      <button id="h-btn" class="btn-primary">Get the list of hostels</button>
+      <div class="tableContent">
+        <table id="hTable">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>hostel Name</th>
+              <th>hostel Address</th>
+              <th>Pincode</th>
+              <th>Hostel Facilites</th>
+              <th>Hostel Fees</th>
+              <th>Rating</th>
+              <th>Review</th>
+              <!-- <th>Delete</th>
+                            <th>Update</th> -->
+            </tr>
+          </thead>
+          <tbody id="hostelTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./hostel.js"></script>
+  </body>
+</html>

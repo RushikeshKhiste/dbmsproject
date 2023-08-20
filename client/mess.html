@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Ginnie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="messContainer">
+      <h1 class="h-primary" id="contactMess">Mess Information</h1>
+
+      <form id="messInfo" class="contact1">
+        <div>
+          <label for="messName" >Mess Name: </label><br /><br />
+          <input
+            type="text"
+            name="messName"
+            id="messName"
+            placeholder="Enter your mess name"
+          />
+        </div>
+        <div>
+          <label for="messAddr">Mess Address: </label><br /><br />
+          <input
+            type="text"
+            name="messAddr"
+            id="messAddr"
+            placeholder="Enter your mess address"
+          />
+        </div>
+        <div>
+          <label for="messPin">Pincode: </label><br /><br />
+          <input
+            type="number"
+            name="messPin"
+            id="messPin"
+            placeholder="Enter your mess pin"
+          />
+        </div>
+        <div>
+          <label for="messFacilities">Facilites: </label><br /><br />
+          <input
+            type="text"
+            name="messFacilities"
+            id="messFacilities"
+            placeholder="Enter your mess facilites"
+          />
+        </div>
+        <div>
+          <label for="messFees">Mess fees: </label><br /><br />
+          <input
+            type="number"
+            name="messFees"
+            id="messFees"
+            placeholder="Enter your mess fees"
+          />
+        </div>
+        <div>
+          <label for="messRating">Mess Rating: </label><br /><br />
+          <input
+            type="number"
+            name="messRating"
+            id="messRating"
+            placeholder="Rate your mess from 1 to 5"
+          />
+        </div>
+        <div>
+          <label for="messReview">Mess Review: </label><br /><br />
+          <input
+            type="text"
+            name="messReview"
+            id="messReview"
+            placeholder="Review your mess in 10 words"
+          />
+        </div>
+        <div>
+          <button type="submit" id="messBtn" class="submit-btn">
+            Submit
+          </button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </form>
+      <br /><br /><br />
+      <button id="m-btn" class="btn-primary">Get the list of mess</button>
+      <div class="tableContent">
+        <table id="mTable">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Mess Name</th>
+              <th>Mess Address</th>
+              <th>Pincode</th>
+              <th>Mess Facilites</th>
+              <th>Mess Fees</th>
+              <th>Rating</th>
+              <th>Review</th>
+              <!-- <th>Delete</th>
+                            <th>Update</th> -->
+            </tr>
+          </thead>
+          <tbody id="messTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./mess.js"></script>
+  </body>
+</html>

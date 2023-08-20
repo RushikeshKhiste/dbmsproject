@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Ginnie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="home">
+    <div class="container-1">
+      <!-- <div><center><h1>utkarsh</h1></center></div> -->
+      <div class="logo">
+        <h2>college ginnie</h2>
+        <img id="logoImage" src="../images/ginnieLogo.jpg" alt="" />
+      </div>
+      <nav>
+        <div class="nav">
+          <ul class="navMenu">
+            <li class="navList"><a href="main.html">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  <div class="loginContainer">
+    <div id="loginPage">
+      <h1 class="h-secondary" id="loginPageHead">Login</h1>
+
+      <form id="loginInfo" class="contact1">
+        <div>
+          <label for="clientName">User Name: </label><br /><br />
+          <input
+            type="text"
+            name="clientName"
+            id="clientName"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div>
+          <label for="clientPassword">User password: </label><br /><br />
+          <input
+            type="password"
+            name="clientPassword"
+            id="clientPassword"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div>
+          <button type="submit" id="loginPageBtn" class="submit-btn">login</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div id="registerPage">
+      <h1 class="h-secondary" id="registerPageHead">Register</h1>
+
+      <form id="registerInfo" class="contact1">
+        <div>
+          <label for="clientRegName">User Name: </label><br /><br />
+          <input
+            type="text"
+            name="clientRegName"
+            id="clientRegName"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div>
+          <label for="clientRegPassword">password: </label><br /><br />
+          <input
+            type="password"
+            name="clientRegPassword"
+            id="clientRegPassword"
+            placeholder="Enter your  password"
+          />
+        </div>
+        <div>
+          <label for="clientConfirmPassword">Confirm Password: </label><br /><br />
+          <input
+            type="password"
+            name="clientConfirmPassword"
+            id="clientConfirmPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <div>
+          <button type="submit" id="clientRegBtn" class="submit-btn">Submit</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./login.js"></script>
+</body>
+</html>

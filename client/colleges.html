@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>college Ginnie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="container-1">
+        <!-- <div><center><h1>utkarsh</h1></center></div> -->
+        <div class="logo">
+          <h2>college ginnie</h2>
+          <img id="logoImage" src="../images/ginnieLogo.jpg" alt="" />
+        </div>
+        <nav>
+          <div class="nav">
+            <ul class="navMenu">
+              <li class="navList"><a href="index.html">Home</a></li>
+              <li class="navList"><a href="colleges.html">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="clgContainer">
+      <h1 class="h-primary" id="contactCollege">College Information</h1>
+
+      <form id="collegeInfo" class="contact1">
+        <div>
+          <label for="clgName">College Name: </label><br /><br />
+          <input
+            type="text"
+            name="clgName"
+            id="clgName"
+            placeholder="Enter your college name"
+          />
+        </div>
+        <div>
+          <label for="clgAddr">College Address: </label><br /><br />
+          <input
+            type="text"
+            name="clgAddr"
+            id="clgAddr"
+            placeholder="Enter your college address"
+          />
+        </div>
+        <div>
+          <label for="clgPin">Pincode: </label><br /><br />
+          <input
+            type="number"
+            name="clgPin"
+            id="clgPin"
+            placeholder="Enter your college pin"
+          />
+        </div>
+        <div>
+          <label for="clgBranches">Branches: </label><br /><br />
+          <input
+            type="text"
+            name="clgBranches"
+            id="clgBranches"
+            placeholder="Enter your college branches"
+          />
+        </div>
+        <div>
+          <label for="clgAvgPack">College Average Package(lakh): </label><br /><br />
+          <input
+            type="number"
+            name="clgAvgPack"
+            id="clgAvgPack"
+            placeholder="Enter your college Package"
+          />
+        </div>
+        <div>
+          <label for="clgRating">College Rating: </label><br /><br />
+          <input
+            type="number"
+            name="clgRating"
+            id="clgRating"
+            placeholder="Rate your college from 1 to 5"
+          />
+        </div>
+        <div>
+          <label for="clgReview">College Review: </label><br /><br />
+          <input
+            type="text"
+            name="clgReview"
+            id="clgReview"
+            placeholder="Review your college in 10 words"
+          />
+        </div>
+        <div>
+          <button type="submit" id="clgBtn" class="submit-btn">Submit</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </form>
+      <br /><br /><br />
+      <button id="clg-btn" class="btn-primary">Get the list of colleges</button>
+      <div class="tableContent">
+        <div id="searchCollege">
+
+        </div>
+        <table id="clgTable">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>college Name</th>
+              <th>College Address</th>
+              <th>Pincode</th>
+              <th>Branches</th>
+              <th>Avarage Package</th>
+              <th>Rating</th>
+              <th>Review</th>
+              <th>Hostels</th>
+              <th>Mess</th>
+              <!-- <th>Delete</th>
+                        <th>Update</th> -->
+            </tr>
+          </thead>
+          <tbody id="clgTableBody"></tbody>
+          
+        </table>
+
+        <table id="searchClgTable">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>college Name</th>
+              <th>College Address</th>
+              <th>Pincode</th>
+              <th>Branches</th>
+              <th>Avarage Package</th>
+              <th>Rating</th>
+              <th>Review</th>
+              <th>Hostels</th>
+              <th>Mess</th>
+              <!-- <th>Delete</th>
+                        <th>Update</th> -->
+            </tr>
+          </thead>
+          <tbody  id="searchClgTableBody"></tbody>
+          
+        </table>
+      </div>
+    </div>
+    <div hidden class="tempHostelContainer">
+      <h1 class="h-secondary">Hostel list you need</h1>
+      <table id="tempHTable">
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th>hostel Name</th>
+            <th>hostel Address</th>
+            <th>Pincode</th>
+            <th>Hostel Facilites</th>
+            <th>Hostel Fees</th>
+            <th>Rating</th>
+            <th>Review</th>
+            <!-- <th>Delete</th>
+                          <th>Update</th> -->
+          </tr>
+        </thead>
+        <tbody id="tempHostelTableBody"></tbody>
+      </table>
+    </div>
+    <div hidden class="tempMessContainer">
+      <table id="tempMTable">
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th>Mess Name</th>
+            <th>Mess Address</th>
+            <th>Pincode</th>
+            <th>Mess Facilites</th>
+            <th>Mess Fees</th>
+            <th>Rating</th>
+            <th>Review</th>
+            <!-- <th>Delete</th>
+                          <th>Update</th> -->
+          </tr>
+        </thead>
+        <tbody id="tempMessTableBody"></tbody>
+      </table>
+    </div>
+    <script src="./colleges.js"></script>
+  </body>
+</html>
